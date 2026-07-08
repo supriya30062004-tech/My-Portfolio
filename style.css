@@ -256,17 +256,19 @@ color:white;
 
 .hero-image{
 
-width: 60px;
+width: 3500px;
 
 display:flex;
 
 justify-content:center;
 
+margin-right: 50px;
+
 }
 
 .hero-image img{
 
-width:350px;
+width:100%;
 
 border-radius:50%;
 
