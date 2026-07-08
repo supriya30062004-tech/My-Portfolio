@@ -1,0 +1,992 @@
+/* =========================================
+
+        RESET
+
+========================================= */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+
+/* =========================================
+
+        BODY
+
+========================================= */
+
+body{
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:#dfd8d8;
+
+color:#080707;
+
+}
+
+
+/* =========================================
+
+        HEADER
+
+========================================= */
+
+header{
+
+position:sticky;
+
+top:0;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 80px;
+
+background:white;
+
+box-shadow:0px 5px 20px rgba(0,0,0,.1);
+
+z-index:1000;
+
+}
+
+
+/* Logo */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo img{
+
+width:45px;
+
+}
+
+.logo h2{
+
+color: #3A2416;;
+
+}
+
+
+/* Navigation */
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#333;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#795940;
+
+}
+
+
+/* =========================================
+
+        HERO
+
+========================================= */
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:80px;
+
+min-height:90vh;
+
+}
+
+
+/* Left Side */
+
+.hero-content{
+
+width:50%;
+
+}
+
+.welcome{
+
+font-size:22px;
+
+color:#795940;
+
+margin-bottom:15px;
+
+}
+
+.hero-content h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.hero-content span{
+
+color:#795940;
+
+}
+
+.hero-content h3{
+
+font-size:28px;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.description{
+
+font-size:20px;
+
+line-height:35px;
+
+margin-bottom:30px;
+
+}
+
+
+/* Buttons */
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+button{
+
+padding:15px 30px;
+
+border:none;
+
+font-size:18px;
+
+cursor:pointer;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.resume{
+
+background:#795940;
+
+color:white;
+
+}
+
+.resume:hover{
+
+background:#3A2416;
+
+}
+
+.contact{
+
+background:white;
+/* 
+border:1px solid #2563EB; */
+
+color:#795940;
+
+}
+
+.contact:hover{
+
+background:#795940;
+
+color:white;
+
+}
+
+
+/* Right Side */
+
+.hero-image{
+
+width: 60px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:350px;
+
+border-radius:50%;
+
+border:8px solid #795940;
+
+box-shadow:0px 15px 40px rgba(0,0,0,.2);
+
+}
+
+/* ===========================================
+        COMMON SECTION TITLE
+=========================================== */
+
+.section-title{
+
+text-align:center;
+
+font-size:40px;
+
+margin-top:80px;
+
+margin-bottom:40px;
+
+color:#795940;
+
+}
+
+/* ===========================================
+            ABOUT
+=========================================== */
+
+.about-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:60px;
+
+width:85%;
+
+margin:auto;
+
+}
+
+.about-image img{
+
+width: 50px;
+
+border-radius:10px;
+
+box-shadow:0px 5px 15px rgba(0,0,0,.2);
+
+}
+
+.about-content{
+
+width:600px;
+
+}
+
+.about-content h3{
+
+font-size:35px;
+
+margin-bottom:20px;
+
+}
+
+.about-content p{
+
+font-size:18px;
+
+line-height:32px;
+
+margin-bottom:20px;
+
+}
+
+/* ===========================================
+        PERSONAL INFO
+=========================================== */
+
+.info-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.info-card{
+
+width:230px;
+
+padding:12px;
+
+background:white;
+
+text-align:center;
+
+border-radius:12px;
+
+box-shadow:0px 5px 15px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.info-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.info-card h3{
+
+color:#795940;
+
+margin-bottom:10px;
+
+}
+
+/* ===========================================
+            SKILLS
+=========================================== */
+
+.skills-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+width:90%;
+
+margin:auto;
+
+}
+
+.skill-card{
+
+width:220px;
+
+padding:30px;
+
+background:white;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:0px 8px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.skill-card:hover{
+
+transform:scale(1.05);
+
+background:#795940;
+
+color:white;
+
+}
+
+.skill-card h3{
+
+margin-bottom:15px;
+
+}
+
+/* ===========================================
+            EDUCATION
+=========================================== */
+
+table{
+
+width:90%;
+
+margin:auto;
+
+border-collapse:collapse;
+
+}
+
+th{
+
+background:#795940;
+
+color:white;
+
+padding:18px;
+
+}
+
+td{
+
+padding:18px;
+
+text-align:center;
+
+}
+
+table,th,td{
+
+border:1px solid #ddd;
+
+}
+
+tr:nth-child(even){
+
+background:#f7f7f7;
+
+}
+
+tr:hover{
+
+background:#e8f0ff;
+
+}
+
+/* ===========================================
+            ACHIEVEMENTS
+=========================================== */
+
+.achievement-container{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:80px;
+
+}
+
+.achievement-card{
+
+width:300px;
+
+padding:30px;
+
+background:white;
+
+border-radius:15px;
+
+box-shadow:0px 8px 20px rgba(0,0,0,.15);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.achievement-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.achievement-card h3{
+
+margin-bottom:15px;
+
+color:#795940;
+
+}
+
+.achievement-card p{
+
+line-height:28px;
+
+}
+/* ===========================================
+            PROJECTS
+=========================================== */
+
+.projects-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+width:90%;
+
+margin:auto;
+
+}
+
+.project-card{
+
+width:330px;
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0px 10px 25px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.project-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+.project-card h3{
+
+margin:20px;
+
+color:#795940;
+
+}
+
+.project-card p{
+
+margin:20px;
+
+line-height:28px;
+
+}
+
+.project-card button{
+
+margin:20px;
+
+padding:12px 25px;
+
+background:#795940;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.project-card button:hover{
+
+background:#3A2416;
+
+}
+
+/* ===========================================
+            EXPERIENCE
+=========================================== */
+
+.experience-card{
+
+width:80%;
+
+margin:auto;
+
+background:white;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:0px 10px 20px rgba(0,0,0,.15);
+
+}
+
+.experience-card h3{
+
+color:#795940;
+
+margin-bottom:10px;
+
+}
+
+.experience-card h4{
+
+margin-bottom:15px;
+
+color:#555;
+
+}
+
+.experience-card p{
+
+margin-bottom:20px;
+
+}
+
+.experience-card ul{
+
+margin-left:25px;
+
+}
+
+.experience-card li{
+
+margin-bottom:12px;
+
+line-height:28px;
+
+}
+
+/* ===========================================
+            CERTIFICATIONS
+=========================================== */
+
+.certificate-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+margin-bottom:80px;
+
+}
+
+.certificate-card{
+
+width:250px;
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:0px 8px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.certificate-card:hover{
+
+background:#795940;
+
+color:white;
+
+transform:scale(1.05);
+
+}
+
+.certificate-card h3{
+
+margin-bottom:15px;
+
+}
+
+/* ===========================================
+            CONTACT SECTION
+=========================================== */
+
+.contact{
+
+padding:80px;
+
+background:#D9CFC6;
+
+}
+
+.contact-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+gap:50px;
+
+flex-wrap:wrap;
+
+}
+
+.contact-info{
+
+width:400px;
+
+}
+
+.contact-info h3{
+
+color:#795940;
+
+margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+margin-bottom:20px;
+
+line-height:30px;
+
+font-size:18px;
+
+}
+
+.contact-form{
+
+width:500px;
+
+}
+
+.contact-form form{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.contact-form input{
+
+padding:15px;
+
+margin-bottom:20px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+.contact-form textarea{
+
+padding:15px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:16px;
+
+margin-bottom:20px;
+
+resize:none;
+
+}
+
+.contact-form button{
+
+background:#795940;
+
+color:white;
+
+padding:15px;
+
+border:none;
+
+border-radius:8px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#3A2416;
+
+}
+
+
+
+
+
+/* ===========================================
+                MAP
+=========================================== */
+
+.map{
+
+padding:80px;
+
+}
+
+.map iframe{
+
+width:100%;
+
+height:450px;
+
+border:0;
+
+border-radius:15px;
+
+box-shadow:0px 10px 25px rgba(0,0,0,.2);
+
+}
+
+
+
+
+
+/* ===========================================
+            SOCIAL MEDIA
+=========================================== */
+
+.social{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+.social-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+text-decoration:none;
+
+padding:15px 25px;
+
+background:#795940;
+
+color:white;
+
+border-radius:8px;
+
+transition:.3s;
+
+font-weight:bold;
+
+}
+
+.social-links a:hover{
+
+background:#3A2416;
+
+transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* ===========================================
+                FOOTER
+=========================================== */
+
+footer{
+
+background:#111827;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+footer h2{
+
+margin-bottom:15px;
+
+}
+
+footer p{
+
+margin-bottom:10px;
+
+color:#ddd;
+
+}
